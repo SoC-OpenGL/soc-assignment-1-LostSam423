@@ -5,13 +5,13 @@ LIBS=$(OPENGLLIB) $(GLEWLIB) $(GLFWLIB)
 LDFLAGS=-L/usr/local/lib 
 CPPFLAGS=-I/usr/local/include
 
-BIN1=ring
-BIN2=disk
-BIN3=f
-SRCS1=ring.cpp readfile.cpp shader.cpp  
-SRCS2=disk.cpp readfile.cpp shader.cpp
-SRCS3=f.cpp readfile.cpp shader.cpp
-INCLUDES=readfile.hpp shader.hpp
+BIN1=bin/ring
+BIN2=bin/disk
+BIN3=bin/f
+SRCS1=ring.cpp utility/readfile.cpp utility/shader.cpp  
+SRCS2=disk.cpp utility/readfile.cpp utility/shader.cpp
+SRCS3=f.cpp utility/readfile.cpp utility/shader.cpp
+INCLUDES=utility/readfile.hpp utility/shader.hpp
 
 all: $(BIN1) $(BIN2) $(BIN3)
 $(BIN1): $(SRCS1) $(INCLUDES)

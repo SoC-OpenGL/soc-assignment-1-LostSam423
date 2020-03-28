@@ -6,8 +6,8 @@
 #include <iostream>
 #include <cmath>
 
-#include "readfile.hpp"
-#include "shader.hpp"
+#include "utility/readfile.hpp"
+#include "utility/shader.hpp"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -64,7 +64,7 @@ int main()
         6, 4, 7,
     };
     
-    Shader *shdr = new Shader("shad.vs","shad.fs");
+    Shader *shdr = new Shader("shaders/shad.vs","shaders/shad.fs");
     GLuint VBO, VAO, EBO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers( 1, &VBO );
