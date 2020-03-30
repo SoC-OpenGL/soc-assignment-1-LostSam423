@@ -27,7 +27,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Soviet Republic", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "F", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -43,12 +43,12 @@ int main()
     {
         -0.2f, 0.6f,  0.0f, 1.0, 0.0, 1.0,
         -0.2f, 0.4f, 0.0f,  1.0, 0.0, 0.0,
-        -0.2f, -0.5f, 0.0f, 0.0, 1.0, 1.0,
+        -0.2f,-0.5f, 0.0f,  0.0, 1.0, 1.0,
         0.0f, -0.5f, 0.0f,  1.0, 0.0, 1.0,//3
         0.0f, 0.0f , 0.0f,  0.0, 1.0, 0.0,//4
         0.4f, 0.0f, 0.0f,   0.0, 0.0, 1.0,//5
         0.4f, 0.2f, 0.0f,   0.0, 1.0, 1.0, //6
-        0.0f,0.2f,0.0f,     1.0, 0.0, 0.0,//7
+        0.0f, 0.2f, 0.0f,   1.0, 0.0, 0.0,//7
         0.0f, 0.4f, 0.0f,   0.0, 0.0, 1.0,//8
         0.6f, 0.4f, 0.0f,   0.0, 1.0, 0.0, //9
         0.6f,0.6f,0.0f,     1.0, 1.0, 0.0

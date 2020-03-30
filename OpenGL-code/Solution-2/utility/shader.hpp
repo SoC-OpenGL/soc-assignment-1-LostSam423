@@ -1,4 +1,4 @@
-#ifndef _SHADER_HPP_
+
 #define _SHADER_HPP_
 
 #include <GL/glew.h>
@@ -17,5 +17,5 @@ class Shader{
 		Shader(const char* vertexPath, const char* fragmentPath);
 		GLuint Shadertype(GLenum eShaderType, const char *filePath);
 		void use();
+		GLuint returnID();
 };
-#endif

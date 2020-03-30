@@ -29,7 +29,7 @@ int main()
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
 
 
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Soviet Republic", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Ring", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -102,7 +102,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 void drawRing(GLfloat *vertices, GLuint *indices, int N)
 {
     GLfloat centre = 0.0f;
-    GLfloat rad = 0.2f;
+    GLfloat rad = 0.5f;
     float i = 0;
 
     while(i<=N){

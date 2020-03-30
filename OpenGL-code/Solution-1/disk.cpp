@@ -30,7 +30,7 @@ int main()
 
     
 
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Soviet Republic", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Red Disk", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -101,7 +101,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 void drawDisk(GLfloat *indices, GLuint *poi, int N)
 {
     GLfloat centre = 0.0f;
-    GLfloat rad = 0.2f;
+    GLfloat rad = 0.5f;
 
     for(int i=0; i<=N; i+=360/N){
         GLfloat x = centre + rad * cos(i*M_PI/180);
